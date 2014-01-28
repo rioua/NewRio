@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First Test Suite]">
+  <parameter name="testServer" value="http://az.wmatrix.rio-dev.shalb.com/"/>
+  <test name="OneTest(failed)">
+    <classes>
+      <class name="ua.rio.qa.tests.AddPostNotLogged">
+        <methods>
+          <include name="init"/>
+          <include name="destruct"/>
+          <include name="test02"/>
+        </methods>
+      </class> <!-- ua.rio.qa.tests.AddPostNotLogged -->
+    </classes>
+  </test> <!-- OneTest(failed) -->
+</suite> <!-- Failed suite [First Test Suite] -->
