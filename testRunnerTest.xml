@@ -4,7 +4,7 @@
 	<parameter name="testServer" value="http://az.wmatrix.rio-dev.shalb.com/" />
 	<test name="OneTest">
 		<classes>
-			<class name="ua.rio.qa.tests.AddPostNotLogged"/>
+			<class name="ua.rio.qa.tests.AddComment"/>
 			
 		</classes>
 	</test>

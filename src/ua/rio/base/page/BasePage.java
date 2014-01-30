@@ -12,11 +12,11 @@ import static org.testng.Assert.*;
 
 public class BasePage {
 	
-	public static WebDriver driver;
+	public static   WebDriver driver;
 	
 	
 	public BasePage(WebDriver driver) {
-		BasePage.driver = driver;
+		this.driver = driver;
 	}
 
 	@FindBy(tagName="html")

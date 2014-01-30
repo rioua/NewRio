@@ -4,13 +4,13 @@
   <parameter name="testServer" value="http://az.wmatrix.rio-dev.shalb.com/"/>
   <test name="OneTest(failed)">
     <classes>
-      <class name="ua.rio.qa.tests.AddPostNotLogged">
+      <class name="ua.rio.qa.tests.AddComment">
         <methods>
           <include name="init"/>
           <include name="destruct"/>
-          <include name="test02"/>
+          <include name="test05"/>
         </methods>
-      </class> <!-- ua.rio.qa.tests.AddPostNotLogged -->
+      </class> <!-- ua.rio.qa.tests.AddComment -->
     </classes>
   </test> <!-- OneTest(failed) -->
 </suite> <!-- Failed suite [First Test Suite] -->

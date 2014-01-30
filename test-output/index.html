@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-First_Test_Suite">
-                    <span>C:\Users\user\workspace\New RIO\testRunnerTest.xml</span>
+                    <span>C:\Users\user\Documents\GitHub\NewRio\testRunnerTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-First_Test_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-First_Test_Suite" title="ua.rio.qa.tests.AddPostNotLogged" hash-for-method="test02">test02</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-First_Test_Suite" title="ua.rio.qa.tests.AddComment" hash-for-method="test05">test05</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-First_Test_Suite -->
@@ -119,35 +119,36 @@
           <div class="suite-First_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">ua.rio.qa.tests.AddPostNotLogged</span>
+              <span class="class-name">ua.rio.qa.tests.AddComment</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test02">
-                  </a> <!-- test02 -->
-                  <span class="method-name">test02</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.02 seconds
+                  <a name="test05">
+                  </a> <!-- test05 -->
+                  <span class="method-name">test05</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.alert.alert-info &gt; span&quot;}
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;
 System info: os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_45&apos;
-Session ID: 7c8fa418-06b1-4c0f-be30-8abb23f9b7be
+Session ID: d2993dcb-4db4-48b8-9668-664e7abc37d6
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=25.0}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at ua.rio.qa.tests.AddPostNotLogged.test02(AddPostNotLogged.java:31)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at ua.rio.qa.tests.AddComment.test05(AddComment.java:28)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.alert.alert-info &gt; span&quot;}
 Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;
 System info: os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_45&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Temp/anonymous287820231797929358webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8231)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Temp/anonymous287820231797929358webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10800)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Temp/anonymous287820231797929358webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10817)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Temp/anonymous287820231797929358webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:396)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Temp/anonymous2813122248394862636webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8880)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Temp/anonymous2813122248394862636webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -157,7 +158,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel First_Test_Suite -->
         <div panel-name="test-xml-First_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\workspace\New RIO\testRunnerTest.xml</span>
+            <span class="header-content">C:\Users\user\Documents\GitHub\NewRio\testRunnerTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -167,7 +168,7 @@ Driver info: driver.version: unknown
   &lt;parameter name=&quot;testServer&quot; value=&quot;http://az.wmatrix.rio-dev.shalb.com/&quot;/&gt;
   &lt;test name=&quot;OneTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ua.rio.qa.tests.AddPostNotLogged&quot;/&gt;
+      &lt;class name=&quot;ua.rio.qa.tests.AddComment&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OneTest --&gt;
 &lt;/suite&gt; &lt;!-- First Test Suite --&gt;
@@ -209,9 +210,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test02')
-data.setCell(0, 2, 'ua.rio.qa.tests.AddPostNotLogged')
-data.setCell(0, 3, 17547);
+data.setCell(0, 1, 'test05')
+data.setCell(0, 2, 'ua.rio.qa.tests.AddComment')
+data.setCell(0, 3, 17080);
 window.suiteTableData['First_Test_Suite']= { tableData: data, tableDiv: 'times-div-First_Test_Suite'}
 return data;
 }
@@ -242,7 +243,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ua.rio.qa.tests.AddPostNotLogged</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ua.rio.qa.tests.AddComment</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init(http://az.wmatrix.rio-dev.shalb.com/)</span>
                 <span class="method-start">0 ms</span>
@@ -250,14 +251,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test02</span>
-                <span class="method-start">34065 ms</span>
+                <span class="method-name">test05</span>
+                <span class="method-start">7067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">destruct</span>
-                <span class="method-start">51619 ms</span>
+                <span class="method-start">24157 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
